@@ -88,7 +88,7 @@ color: white;
     display: inline-block;
     width: 5px;
  
-    background: #6366f1;
+    background: #6d6fed;
     animation: wave 1s infinite ease-in-out;
   }
  
@@ -101,7 +101,7 @@ color: white;
 
   @keyframes waveAnim {
     0%, 100% {
-      transform: scaleY(0.3);
+      transform: scaleY(0.4);
     }
     50% {
       transform: scaleY(1);

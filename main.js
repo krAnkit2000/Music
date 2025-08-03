@@ -348,6 +348,10 @@ volumeSlider.addEventListener('input', () => {
   audio.volume = volumeSlider.value / 100;
 });
 
+
+
+
+
 // Progress bar update
 audio.ontimeupdate = () => {
   const current = audio.currentTime;
@@ -374,8 +378,8 @@ audio.addEventListener('ended', () => {
 const waveContainer = document.getElementById('waveAnimation');
 waveContainer.innerHTML = '';
 
-const spanCount = 95;
-const delayStep = 0.2; // seconds
+const spanCount = 87;
+const delayStep = 0.4; // seconds
 
 for (let i = 0; i < spanCount; i++) {
   const span = document.createElement('span');
@@ -424,16 +428,3 @@ const playlistPanel = document.getElementById('playlistPanel');
     playlistPanel.classList.add('translate-x-full');
   });
 
-
-//   const playlistBtn = document.getElementById("playlistToggleBtn");
-
-
-// playlistBtn.addEventListener("click", () => {
-//   playlistPanel.classList.toggle("hidden");
-// });
-
-
-
-// playlistBtn.addEventListener("click", () => {
-//   playlistPanel.classList.toggle("hidden");
-// });
