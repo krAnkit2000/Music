@@ -141,6 +141,11 @@ color: white;
 
 
   /* Start hidden offscreen */
+
+#playlistPanel{
+    height: min-content;
+}
+
 .playlist-mobile {
     position: fixed;
     top: 0; bottom: 0; right: 0;
