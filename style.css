@@ -161,5 +161,7 @@ color: white;
   .playlist-mobile.active {
     transform: translateX(0);
   }
-  
+  .palycard{
+    height: fit-content;
+  }
 
