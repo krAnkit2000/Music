@@ -423,3 +423,17 @@ const playlistPanel = document.getElementById('playlistPanel');
   closePlaylist?.addEventListener('click', () => {
     playlistPanel.classList.add('translate-x-full');
   });
+
+
+  const playlistBtn = document.getElementById("playlistToggleBtn");
+
+
+playlistBtn.addEventListener("click", () => {
+  playlistPanel.classList.toggle("hidden");
+});
+
+
+
+playlistBtn.addEventListener("click", () => {
+  playlistPanel.classList.toggle("hidden");
+});
