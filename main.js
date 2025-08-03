@@ -379,7 +379,7 @@ const waveContainer = document.getElementById('waveAnimation');
 waveContainer.innerHTML = '';
 
 const spanCount = 87;
-const delayStep = 0.4; // seconds
+const delayStep = 0.3; // seconds
 
 for (let i = 0; i < spanCount; i++) {
   const span = document.createElement('span');

@@ -101,7 +101,7 @@ color: white;
 
   @keyframes waveAnim {
     0%, 100% {
-      transform: scaleY(0.4);
+      transform: scaleY(0.2);
     }
     50% {
       transform: scaleY(1);
