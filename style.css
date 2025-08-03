@@ -138,3 +138,23 @@ color: white;
     scrollbar-width: thin;
     scrollbar-color: #888 transparent;
   }
+
+
+  /* Start hidden offscreen */
+.playlist-mobile {
+    position: fixed;
+    top: 0; bottom: 0; right: 0;
+    width: 80vw; /* almost full screen width on mobile */
+    max-width: 320px;
+    background-color: #1f2937; /* bg-gray-800 */
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  /* Show playlist */
+  .playlist-mobile.active {
+    transform: translateX(0);
+  }
+  

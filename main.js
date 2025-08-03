@@ -425,15 +425,15 @@ const playlistPanel = document.getElementById('playlistPanel');
   });
 
 
-  const playlistBtn = document.getElementById("playlistToggleBtn");
+//   const playlistBtn = document.getElementById("playlistToggleBtn");
 
 
-playlistBtn.addEventListener("click", () => {
-  playlistPanel.classList.toggle("hidden");
-});
+// playlistBtn.addEventListener("click", () => {
+//   playlistPanel.classList.toggle("hidden");
+// });
 
 
 
-playlistBtn.addEventListener("click", () => {
-  playlistPanel.classList.toggle("hidden");
-});
+// playlistBtn.addEventListener("click", () => {
+//   playlistPanel.classList.toggle("hidden");
+// });
