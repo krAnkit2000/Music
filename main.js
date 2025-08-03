@@ -33,22 +33,6 @@ function formatTime(ms) {
   return `${min}:${sec}`;
 }
 
-// Fetch multiple artists
-// Promise.all(
-//   artists.map(artist =>
-//     fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(artist)}&media=music&limit=2000`)
-//       .then(res => res.json())
-//       .then(data => data.results)
-   
-//   ))
-//   .then(allResults => {
-//   songs = allResults.flat();
-//   renderSongs();
-//   if (songs.length > 0) {
-//     playSelectedSong(songs[0], 0);
-//     highlightActiveSong(0);
-//   }
-// });
 
 
 Promise.all(
@@ -274,3 +258,7 @@ const playlistPanel = document.getElementById('playlistPanel');
     playlistPanel.classList.add('translate-x-full');
   });
 
+
+
+
+  
