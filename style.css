@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #f43f5e;
+    --dark: #0f172a;
+    --light: #f1f5f9;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.disc {
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+
+.now-playing .disc {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.progress-container:hover .progress-time {
+    opacity: 1;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.playlist-item:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+}
+
+.playlist-item.active {
+    background-color: rgba(99, 102, 241, 0.2);
+    border-left: 4px solid #6366f1;
+}
+
+#prevBtn{
+    margin-inline-end: 3rem;
+}
+
+#forwardBtn{
+margin-inline-start: 3rem;
+}
+
+
+
+
+.playlist-item.active {
+background-color: #4f46e5; /* Indigo color */
+color: white;
+}
+
+
+
+
+.wave {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 4px;
+    height: 25px;
+    align-items: end;
+  }
+  .wave span {
+    display: inline-block;
+    width: 5px;
+ 
+    background: #6366f1;
+    animation: wave 1s infinite ease-in-out;
+  }
+ 
+  @keyframes wave {
+    0%, 100% { height: 10%; }
+    50% { height: 100%; }
+  }
+  
+   
+
+  @keyframes waveAnim {
+    0%, 100% {
+      transform: scaleY(0.2);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .wave {
+      height: 30px;
+      max-width: 90%;
+    }
+    .wave span {
+      width: 3px;
+    }
+  }
+
+  /* playlist section */
+
+  .custom-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  /* Optional: Firefox support */
+  .custom-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+  }
+
+
+  /* Start hidden offscreen */
+
+#playlistPanel{
+    height: min-content;
+}
+
+.playlist-mobile {
+    position: fixed;
+    top: 0; bottom: 0; right: 0;
+    width: 80vw; /* almost full screen width on mobile */
+    max-width: 320px;
+    background-color: #1f2937; /* bg-gray-800 */
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  /* Show playlist */
+  .playlist-mobile.active {
+    transform: translateX(0);
+  }
+  .palycard{
+    height: fit-content;
+  }
+
+
+
+
+  /*  */
+
+  
+  /*  */
