@@ -7,9 +7,7 @@ let songs = [];
 let currentSongIndex = 0;
 
 
-  if (localStorage.getItem("isLoggedIn") !== "true") {
-      window.location.href = "login.html";
-    }
+ 
 
 
 
