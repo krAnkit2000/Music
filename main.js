@@ -2,7 +2,7 @@
 
 
 // Global variables
-const artists = ['jubin garg','shreya ghoshal','Diljit Dosanjh','Satinder Sartaaj','arijit singh','shiva  choudhari', 'jubin nautiyal'];
+const artists = ['shashwat sachdev','jubin garg','shreya ghoshal','Diljit Dosanjh','Satinder Sartaaj','arijit singh','shiva  choudhari', 'jubin nautiyal'];
 let songs = [];
 let currentSongIndex = 0;
 
